@@ -60,3 +60,9 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+*.pyc
+/*.pyc
+.idea/
+db.sqlite3
+*/migrations/
