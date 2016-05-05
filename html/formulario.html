@@ -57,9 +57,36 @@
            <div class="row">
              <div class="input-field col s12">
                <input id="email" type="email" class="validate">
-               <label for="email">Email</label>
+               <label for="email">Correo Electrónico</label>
              </div>
            </div>
+           <div class="row">
+             <div class="input-field col s12">
+               <input id="correo" type="text" class="validate">
+               <label for="correo">Ubicación</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12">
+               <input id="ocupacion" type="text" class="validate">
+               <label for="ocupacion">Ocupación</label>
+             </div>
+           </div>
+           <div class="section" id="valores">
+             <h2 class="orange-text"> Valores y Principios</h2>
+           </div>
+           <div class="section" id="derechos">
+             <h2 class="orange-text"> Derechos </h2>
+           </div>
+           <div class="section" id="deberes">
+             <h2 class="orange-text"> Deberes y Responsabilidades </h2>
+           </div>
+           <div class="section" id="instituciones">
+             <h2 class="orange-text"> Instituciones </h2>
+           <div class="section" id="comentarios">
+             <h2 class="orange-text"> Comentarios Generales </h2>
+           </div>
+         </div>
        </div>
     </div>
     <br><br>
@@ -113,8 +140,11 @@
   <script type="text/javascript">
   $(document).ready(function() {
     $('.datepicker').pickadate({
-      selectMonths: true, // Creates a dropdown to control month
-      selectYears: 100 // Creates a dropdown of 15 years to control year
+      selectMonths: true,
+      selectYears: 100,
+      startYear: '1900',
+      dateMin: [1960,1,1], // Creates a dropdown of 15 years to control year
+      dateMax: true
     });
   })
   </script>
