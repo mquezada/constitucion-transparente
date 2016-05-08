@@ -380,6 +380,7 @@
         if(count <= 7){
             //template.attr('id', 'valores-option-'+context+'-'+count);
             template.insertBefore(button);
+            $('textarea.materialize-textarea').characterCounter();
             template.find('select').material_select();
         }
         if(count == 7){
@@ -395,7 +396,7 @@
             dateMax: true
             });
         $('select').material_select();
-        $('input#input_text, textarea#textarea1').characterCounter();
+        $('input#input_text, textarea.materialize-textarea').characterCounter();
         $('.add-option-btn').click(function(){
             addOption($(this));
         });
